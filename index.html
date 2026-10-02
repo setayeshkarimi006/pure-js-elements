@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Slider</title>
+    <title>Image Slider / tabs</title>
 </head>
 <body>
     <main class="container">
@@ -30,11 +30,210 @@
                 <span class="dot"></span>
             </div>
         </section>
-        <section class="next-task">
-            <span>Next Challenge</span>
-            <h2>Task 2</h2>
-        </section>
+        
     </main>
+
+    <main class="container">
+
+      <section class="card">
+
+        <!-- Header -->
+        <header class="header">
+          <div>
+            <span class="eyebrow">INTERACTIVE UI</span>
+
+            <h1>مدیریت محتوا</h1>
+
+            <p>
+              تمرین Tabs، Dropdown، Modal و Event Delegation
+            </p>
+          </div>
+
+          <div class="header-icon">
+            ✨
+          </div>
+        </header>
+
+
+        <!-- Tabs -->
+        <section class="tabs-section">
+
+          <div class="tabs" id="tabs">
+
+            <button
+              class="tab-btn active"
+              data-tab="profile"
+            >
+              پروفایل
+            </button>
+
+            <button
+              class="tab-btn"
+              data-tab="settings"
+            >
+              تنظیمات
+            </button>
+
+            <button
+              class="tab-btn"
+              data-tab="notifications"
+            >
+              اعلان‌ها
+            </button>
+
+          </div>
+
+
+          <div class="tab-content">
+
+            <div
+              class="tab-panel active"
+              data-panel="profile"
+            >
+              <span class="panel-icon">👤</span>
+
+              <h2>پروفایل کاربری</h2>
+
+              <p>
+                این بخش مربوط به اطلاعات پروفایل کاربر است.
+              </p>
+            </div>
+
+
+            <div
+              class="tab-panel"
+              data-panel="settings"
+            >
+              <span class="panel-icon">⚙️</span>
+
+              <h2>تنظیمات</h2>
+
+              <p>
+                در این قسمت می‌توانی تنظیمات حساب خودت را مدیریت کنی.
+              </p>
+            </div>
+
+
+            <div
+              class="tab-panel"
+              data-panel="notifications"
+            >
+              <span class="panel-icon">🔔</span>
+
+              <h2>اعلان‌ها</h2>
+
+              <p>
+                اینجا اعلان‌ها و پیام‌های جدید نمایش داده می‌شوند.
+              </p>
+            </div>
+
+          </div>
+
+        </section>
+
+
+        <!-- Dropdown -->
+        <section class="dropdown-section">
+
+          <h2>انتخاب دسته‌بندی</h2>
+
+          <div class="dropdown" id="dropdown">
+
+            <button
+              class="dropdown-button"
+              id="dropdown-button"
+            >
+              <span id="selected-option">
+                یک گزینه انتخاب کن
+              </span>
+
+              <span class="arrow">⌄</span>
+            </button>
+
+
+            <div
+              class="dropdown-menu"
+              id="dropdown-menu"
+            >
+
+              <button data-value="frontend">
+                Frontend
+              </button>
+
+              <button data-value="javascript">
+                JavaScript
+              </button>
+
+              <button data-value="react">
+                React
+              </button>
+
+              <button data-value="design">
+                UI / UX
+              </button>
+
+            </div>
+
+          </div>
+
+        </section>
+
+
+        <!-- Modal -->
+        <section class="modal-section">
+
+          <h2>Modal</h2>
+
+          <button
+            id="open-modal"
+            class="primary-btn"
+          >
+            باز کردن Modal
+          </button>
+
+        </section>
+
+      </section>
+
+    </main>
+
+
+    <!-- Modal -->
+    <div
+      class="modal-overlay"
+      id="modal"
+    >
+
+      <div class="modal">
+
+        <button
+          class="close-modal"
+          id="close-modal"
+        >
+          ×
+        </button>
+
+        <div class="modal-icon">
+          🚀
+        </div>
+
+        <h2>سلام! 👋</h2>
+
+        <p>
+          این یک Modal است که با JavaScript باز و بسته می‌شود.
+        </p>
+
+        <button
+          class="primary-btn"
+          id="modal-ok"
+        >
+          متوجه شدم
+        </button>
+
+      </div>
+
+    </div>
+
 
     <script src="./main.js"></script>
 
