@@ -9,6 +9,7 @@ const images = [
   "./picture/Gun-icon-Mainpage.webp",
   "./picture/Fist-icon-Mainpage.webp",
 ];
+///خود اسلایدر
 let currentIndex = 0;
 function showImage() {
   sliderImage.src = images[currentIndex];
@@ -16,6 +17,7 @@ function showImage() {
     dot.classList.toggle("active", index === currentIndex);
   });
 }
+///دکمه جلو رونده
 nextButton.addEventListener("click", () => {
   currentIndex++;
   if (currentIndex >= images.length) {
@@ -23,6 +25,7 @@ nextButton.addEventListener("click", () => {
   }
   showImage();
 });
+///دکمه عقب رونده
 prevButton.addEventListener("click", () => {
   currentIndex--;
   if (currentIndex < 0) {
@@ -30,6 +33,7 @@ prevButton.addEventListener("click", () => {
   }
   showImage();
 });
+///نقاط زیر تصاویر
 dots.forEach((dot, index) => {
   dot.addEventListener("click", () => {
     currentIndex = index;
@@ -37,25 +41,21 @@ dots.forEach((dot, index) => {
   });
 });
 
+
+
+
+
+
 ///بخش دوم تب ها و مودال
 const tabs = document.querySelector("#tabs");
-
 const tabButtons = document.querySelectorAll(".tab-btn");
-
 const tabPanels = document.querySelectorAll(".tab-panel");
-
 const dropdown = document.querySelector("#dropdown");
-
 const dropdownButton = document.querySelector("#dropdown-button");
-
 const selectedOption = document.querySelector("#selected-option");
-
 const modal = document.querySelector("#modal");
-
 const openModal = document.querySelector("#open-modal");
-
 const closeModal = document.querySelector("#close-modal");
-
 const modalOk = document.querySelector("#modal-ok");
 
 /* =========================

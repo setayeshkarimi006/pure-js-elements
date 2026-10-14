@@ -3,13 +3,13 @@
 }
 body {
     margin: 0;
-    min-height: 100vh;
+    min-height: 150vh;
     background:
         radial-gradient( circle at top, #2a1742 0%, #0d0b14 45% );
     color: white;
     font-family: Arial, sans-serif;
 }
-.container {
+.container1 {
     width: min(900px, 92%);
     margin: auto;
     padding: 55px 0;
@@ -127,7 +127,7 @@ body {
     font-size: 22px;
 }
 @media (max-width: 700px) {
-    .container {
+    .container1 .container2 {
         width: 94%;
         padding: 30px 0;
     }
@@ -187,7 +187,7 @@ body {
 body {
   margin: 0;
 
-  min-height: 100vh;
+  min-height: 150vh;
 
   background:
     radial-gradient(
@@ -210,18 +210,14 @@ button {
   cursor: pointer;
 }
 
-.container {
-  width: min(800px, 92%);
-
-  min-height: 100vh;
-
+.container2 {
+  width: min(900px, 92%);
+  min-height: 120vh;
   margin: auto;
-
+  margin-top:-80px;
   display: flex;
-
   align-items: center;
   justify-content: center;
-
   padding: 40px 0;
 }
 
@@ -254,20 +250,14 @@ button {
   margin-bottom: 35px;
 }
 
-.eyebrow {
-  color: #a78bfa;
-
-  font-size: 11px;
-
-  font-weight: bold;
-
-  letter-spacing: 2px;
+.mohtava{
+flex-direction: row-reverse;
 }
 
 .header h1 {
-  margin: 8px 0;
-
-  font-size: 32px;
+  margin:8px 0;
+flex-direction: row-reverse;
+  font-size:32px;
 }
 
 .header p {
@@ -278,23 +268,6 @@ button {
   font-size: 14px;
 }
 
-.header-icon {
-  width: 48px;
-  height: 48px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 15px;
-
-  background: rgba(139, 92, 246, 0.12);
-
-  border: 1px solid rgba(139, 92, 246, 0.2);
-
-  font-size: 20px;
-}
 
 
 /* Tabs */
@@ -365,10 +338,6 @@ button {
 
 .tab-panel.active {
   display: block;
-}
-
-.panel-icon {
-  font-size: 30px;
 }
 
 .tab-panel h2 {
@@ -548,7 +517,6 @@ button {
 
 .modal-overlay.open {
   opacity: 1;
-
   visibility: visible;
 }
 
@@ -607,9 +575,6 @@ button {
   color: var(--danger);
 }
 
-.modal-icon {
-  font-size: 40px;
-}
 
 .modal h2 {
   margin-bottom: 8px;
